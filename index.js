@@ -31,8 +31,8 @@ app.get("/img/:fileName", (req, res) => {
     res.sendFile(__dirname + "/img/" + req.params.fileName)
 })
 
-app.listen(80, () => {
-    console.log("server is running on 127.0.0.1:80")
+app.listen(8080, () => {
+    console.log("server is running on 127.0.0.1:8080")
 })
 
 // () => {}
