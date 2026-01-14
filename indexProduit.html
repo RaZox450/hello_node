@@ -1,0 +1,286 @@
+<html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.Laclarc Drive</title>
+    <link rel="stylesheet" href="http://127.0.0.1:3000/static/css/style">
+    <script src="http://127.0.0.1:3000/static/js/script" defer=""></script>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+    <header>
+        <div class="containerHeader">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <button id="menuButton">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" class="icon_menu">
+                            <strong class="styleMenu">Menu</strong>
+                        </button>
+                        <ul id="menuDropdown" class="dropdown-content">
+                            <li><a href="http://127.0.0.1:3000/">Accueil</a></li>
+                            <li><a href="http://127.0.0.1:3000/indexProduit.html">Produits</a></li>
+                            <li><a href="http://127.0.0.1:3000/indexContact.html">Contactez-nous</a></li>
+                        </ul>
+                    </li>                    
+                </ul>
+            </nav>
+            <h1>A.Laclarc Drive</h1>
+        </div>
+        <div id="barre_recherche">
+            <input type="search" id="search" value="" onchange="ouvrirPage()" placeholder="Rechercher...">
+            <input type="button" id="button" onclick="ouvrirPage()" value="Rechercher">
+        </div>
+        <div id="top-right-buttons">
+            <button>
+                <img src="https://www.ritron.fr/images/compteb.png" onclick="changePageCompte()" class="icon_compte">
+            </button>
+            <button>
+                <img src="https://cdn-icons-png.flaticon.com/512/118/118089.png" class="icon_panier">
+                <a class="stylePanier">Panier</a>
+            </button>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h2>Nos produits</h2>
+            <p>Découvrez notre large séléction de produits de qualité.</p>
+        </div>
+    </section>
+    <section id="products">
+        <div class="container">
+            <div class="row">
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Abricot.jpg" alt="Abricot">
+                    <h3>Abricots</h3>
+                    <p>Quantité restante : 643</p>
+                    <p>Prix au kilo : 3,70 €</p>
+                    <button class="btn-voir-plus" data-url="abricot.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Banane.png" alt="Banane">
+                    <h3>Bananes</h3>
+                    <p>Quantité restante : 783</p>
+                    <p>Prix au kilo : 1,99 €</p>
+                    <button class="btn-voir-plus" data-url="banane.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Concombre.png" alt="Concombre">
+                    <h3>Concombres</h3>
+                    <p>Quantité restante : 100</p>
+                    <p>Prix au kilo : 1,88 €</p>
+                    <button class="btn-voir-plus" data-url="concombre.html">Voir plus</button>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Durian.png" alt="Durian">
+                    <h3>Durians</h3>
+                    <p>Quantité restante : 298</p>
+                    <p>Prix au kilo : 10,58 €</p>
+                    <button class="btn-voir-plus" data-url="durian.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Echalotte.png" alt="Echalotte">
+                    <h3>Echalottes</h3>
+                    <p>Quantité restante : 156</p>
+                    <p>Prix au kilo : 2,30 €</p>
+                    <button class="btn-voir-plus" data-url="echalotte.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Epinard.png" alt="Epinard">
+                    <h3>Epinards</h3>
+                    <p>Quantité restante : 178</p>
+                    <p>Prix au kilo : 2,40 €</p>
+                    <button class="btn-voir-plus" data-url="epinard.html">Voir plus</button>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Fraise.png" alt="Fraise">
+                    <h3>Fraises</h3>
+                    <p>Quantité restante : 478</p>
+                    <p>Prix au kilo : 7,50 €</p>
+                    <button class="btn-voir-plus" data-url="fraise.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Gingembre.png" alt="Gingembre">
+                    <h3>Gingembres</h3>
+                    <p>Quantité restante : 36</p>
+                    <p>Prix au kilo : 4,99 €</p>
+                    <button class="btn-voir-plus" data-url="gingembre.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Haricot_vert.png" alt="Haricot_vert">
+                    <h3>Haricot Verts</h3>
+                    <p>Quantité restante : 980</p>
+                    <p>Prix au kilo : 4,25 €</p>
+                    <button class="btn-voir-plus" data-url="haricotvert.html">Voir plus</button>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Igname.png" alt="Igname">
+                    <h3>Ignames</h3>
+                    <p>Quantité restante : 925</p>
+                    <p>Prix au kilo : 1,49 €</p>
+                    <button class="btn-voir-plus" data-url="igname.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Jujube.png" alt="Jujube">
+                    <h3>Jujubes</h3>
+                    <p>Quantité restante : 155</p>
+                    <p>Prix au kilo : 8,00 €</p>
+                    <button class="btn-voir-plus" data-url="jujube.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Kiwi.png" alt="Kiwi">
+                    <h3>Kiwis</h3>
+                    <p>Quantité restante : 538</p>
+                    <p>Prix au kilo : 4,99 €</p>
+                    <button class="btn-voir-plus" data-url="kiwi.html">Voir plus</button>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Lentille.png" alt="Lentille">
+                    <h3>Lentilles</h3>
+                    <p>Quantité restante : 2 592</p>
+                    <p>Prix au kilo : 2,07 €</p>
+                    <button class="btn-voir-plus" data-url="lentille.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Melon.png" alt="Melon">
+                    <h3>Melon</h3>
+                    <p>Quantité restante : 50</p>
+                    <p>Prix au kilo : 2,80 €</p>
+                    <button class="btn-voir-plus" data-url="melon.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Noix.png" alt="Noix">
+                    <h3>Noix</h3>
+                    <p>Quantité restante : 359</p>
+                    <p>Prix au kilo : 4,50 €</p>
+                    <button class="btn-voir-plus" data-url="noix.html">Voir plus</button>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Oignons.png" alt="Oignon">
+                    <h3>Oignons</h3>
+                    <p>Quantité restante : 294</p>
+                    <p>Prix au kilo : 2,44 €</p>
+                    <button class="btn-voir-plus" data-url="oignon.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Olive.png" alt="Olive">
+                    <h3>Olive</h3>
+                    <p>Quantité restante : 230</p>
+                    <p>Prix au kilo : 12,00 €</p>
+                    <button class="btn-voir-plus" data-url="olive.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Pomme.png" alt="Pomme">
+                    <h3>Pomme</h3>
+                    <p>Quantité restante : 200</p>
+                    <p>Prix au kilo : 2,00 €</p>
+                    <button class="btn-voir-plus" data-url="pomme.html">Voir plus</button>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Quenette.png" alt="Quenette">
+                    <h3>Quenette</h3>
+                    <p>Quantité restante : 490</p>
+                    <p>Prix au kilo : 3,50 €</p>
+                    <button class="btn-voir-plus" data-url="quenette.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Rhubarbe.png" alt="Rhubarbe">
+                    <h3>Rhubarbe</h3>
+                    <p>Quantité restante : 30</p>
+                    <p>Prix au kilo : 2,80 €</p>
+                    <button class="btn-voir-plus" data-url="rhubarbe.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Salsifi.png" alt="Salsifi">
+                    <h3>Salsifi</h3>
+                    <p>Quantité restante : 433</p>
+                    <p>Prix au kilo : 3,40 €</p>
+                    <button class="btn-voir-plus" data-url="salsifi.html">Voir plus</button>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Tomate.png" alt="Tomate">
+                    <h3>Tomate</h3>
+                    <p>Quantité restante : 554</p>
+                    <p>Prix au kilo : 3,11 €</p>
+                    <button class="btn-voir-plus" data-url="tomate.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Ugli.png" alt="Ugli">
+                    <h3>Ugli</h3>
+                    <p>Quantité restante : 178</p>
+                    <p>Prix au kilo : 18,00 €</p>
+                    <button class="btn-voir-plus" data-url="ugli.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Vanille.png" alt="Vanille">
+                    <h3>Vanille</h3>
+                    <p>Quantité restante : 170</p>
+                    <p>Prix au kilo : 500,00 €</p>
+                    <button class="btn-voir-plus" data-url="vanille.html">Voir plus</button>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Wasabi.png" alt="Wasabi">
+                    <h3>Wasabi</h3>
+                    <p>Quantité restante : 822</p>
+                    <p>Prix au kilo : 19,00 €</p>
+                    <button class="btn-voir-plus" data-url="wasabi.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Ximenia.png" alt="Ximenia">
+                    <h3>Ximenia</h3>
+                    <p>Quantité restante : 314</p>
+                    <p>Prix au kilo : 9,90 €</p>
+                    <button class="btn-voir-plus" data-url="ximenia.html">Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Yubari_king.png" alt="Yubari_king">
+                    <h3>Yubari King</h3>
+                    <p>Quantité restante : 5</p>
+                    <p>Prix au kilo : 11 330,00 €</p>
+                    <button class="btn-voir-plus" data-url="yubariking.html">Voir plus</button>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="product">
+                    <img src="http://127.0.0.1:3000/img/Zatte.png" alt="Zatte">
+                    <h3>Zatte</h3>
+                    <p>Quantité restante : 407</p>
+                    <p>Prix au kilo : 3,00 €</p>
+                    <button class="btn-voir-plus" data-url="zatte.html">Voir plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <a href="http://127.0.0.1:3000/indexContact.html" class="btn-contact">Contactez-nous</a>
+            <p>© 2024 A.Laclarc. Tous droits non réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

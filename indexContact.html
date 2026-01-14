@@ -1,0 +1,69 @@
+<html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.Laclarc Drive</title>
+    <link rel="stylesheet" href="http://127.0.0.1:3000/static/css/style">
+    <script src="http://127.0.0.1:3000/static/js/script" defer=""></script>
+    <style type="text/css" id="operaUserStyle"></style>
+</head>
+<body>
+    <header>
+        <div class="containerHeader">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <button id="menuButton">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" class="icon_menu">
+                            <strong class="styleMenu">Menu</strong>
+                        </button>
+                        <ul id="menuDropdown" class="dropdown-content">
+                            <li><a href="http://127.0.0.1:3000/">Accueil</a></li>
+                            <li><a href="http://127.0.0.1:3000/indexProduit.html">Produits</a></li>
+                            <li><a href="ContactezNous.html">Contactez-nous</a></li>
+                        </ul>
+                    </li>                    
+                </ul>
+            </nav>
+            <h1>A.Laclarc Drive</h1>
+        </div>
+        <div id="barre_recherche">
+            <input type="search" id="search" value="" onchange="ouvrirPage()" placeholder="Rechercher...">
+            <input type="button" id="button" onclick="ouvrirPage()" value="Rechercher">
+        </div>
+        <div id="top-right-buttons">
+            <button>
+                <img src="https://www.ritron.fr/images/compteb.png" onclick="changePageCompte()" class="icon_compte">
+            </button>
+            <button>
+                <img src="https://cdn-icons-png.flaticon.com/512/118/118089.png" class="icon_panier">
+                <a class="stylePanier">Panier</a>
+            </button>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h2>Bienvenue chez A.Laclarc</h2>
+            <p>Si vous avez besoin d'aide.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <form id="contactForm">
+                <div>
+                    <input type="text" placeholder="Nom" required="">
+                    <input type="email" placeholder="Email" required="">
+                    <textarea placeholder="Message" required=""></textarea>
+                </div>
+                <br>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 A.Laclarc. Tous droits non réservés.</p>
+        </div>
+    </footer>
+
+</body></html>

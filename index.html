@@ -1,0 +1,90 @@
+<html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.Laclarc Drive</title>
+    <link rel="stylesheet" href="http://127.0.0.1:3000/static/css/style">
+    <script src="http://127.0.0.1:3000/static/js/script" defer=""></script>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+    <header>
+        <div class="containerHeader">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <button id="menuButton">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" class="icon_menu">
+                            <strong class="styleMenu">Menu</strong>
+                        </button>
+                        <ul id="menuDropdown" class="dropdown-content">
+                            <li><a href="http://127.0.0.1:3000/">Accueil</a></li>
+                            <li><a href="http://127.0.0.1:3000/indexProduit.html">Produits</a></li>
+                            <li><a href="http://127.0.0.1:3000/indexContact.html">Contactez-nous</a></li>
+                        </ul>
+                    </li>                    
+                </ul>
+            </nav>
+            <h1>A.Laclarc Drive</h1>
+        </div>
+        <div id="barre_recherche">
+            <input type="search" id="search" value="" onchange="ouvrirPage()" placeholder="Rechercher...">
+            <input type="button" id="button" onclick="ouvrirPage()" value="Rechercher">
+        </div>
+        <div id="top-right-buttons">
+            <button>
+                <img src="https://www.ritron.fr/images/compteb.png" onclick="changePageCompte()" class="icon_compte">
+            </button>
+            <button>
+                <img src="https://cdn-icons-png.flaticon.com/512/118/118089.png" class="icon_panier">
+                <a class="stylePanier">Panier</a>
+            </button>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Bienvenue chez A.Laclarc</h2>
+            <p>Découvrez nos offres spéciales et nos produits de qualité.</p>
+            <a href="http://127.0.0.1:3000/indexProduit.html" class="btn">Explorer</a>
+        </div>
+    </section>
+    <section id="products">
+        <div class="container">
+            <h1>Nos Promotions</h1><br>
+            <div id="productCarousel" class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-item" style="display: block;">
+                        <img src="http://127.0.0.1:3000/img/Ugli.png">
+                        <br><h2>-30 % sur les Uglis</h2>
+                    </div>
+                    <div class="carousel-item" style="display: none;">
+                        <img src="http://127.0.0.1:3000/img/Abricot.jpg">
+                        <br><h2>-20 % sur les Abricots</h2>
+                    </div>
+                    <div class="carousel-item" style="display: none;">
+                        <img src="http://127.0.0.1:3000/img/Olive.png">
+                        <br><h2>-20 % sur les Olives</h2>
+                    </div>
+                    <div class="carousel-item" style="display: none;">
+                        <img src="http://127.0.0.1:3000/img/Fraise.png">
+                        <br><h2>-10 % sur les Fraises</h2>
+                    </div>
+                    <div class="carousel-item" style="display: none;">
+                        <img src="http://127.0.0.1:3000/img/Zatte.png">
+                        <br><h2>-10 % sur les Zattes</h2>
+                    </div>
+                </div>
+            </div><br>
+            <div id="prev-next">
+                <button onclick="prevSlide()">Précédent</button>
+                <button onclick="nextSlide()">Suivant</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <a href="http://127.0.0.1:3000/indexContact.html" class="btn-contact">Contactez-nous</a>
+            <p>© 2024 A.Laclarc. Tous droits non réservés.</p>
+        </div>
+    </footer>
+
+</body></html>

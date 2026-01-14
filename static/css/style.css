@@ -1,0 +1,389 @@
+/*=================*/
+/* Base de la Page */
+/*=================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.containerHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  width: 80%;
+  margin: 8px auto; 
+}
+
+.container {
+  width: 80%;
+  margin: 8px auto; 
+}
+
+#menuButton {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  margin-right: 20px;
+  margin-left: -150px;
+  background-color: #fff;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#menuButton a {
+  text-decoration: none;
+  color: #000;
+}
+
+#barre_recherche {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+#barre_recherche input[type="search"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 400px;
+}
+
+#barre_recherche input[type="button"] {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #0056b3;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#top-right-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: auto;
+}
+
+#top-right-buttons button {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#top-right-buttons button:hover {
+  background-color: #fff;
+  color: #0056b3;
+}
+
+.icon_panier {
+  width: 20px; 
+  height: auto;
+  justify-content: left;
+  margin-top: 1px;
+}
+
+.stylePanier {
+  color:#000;
+  font-size: 19px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+}
+
+.icon_compte {
+  width: 24px; 
+  height: auto;
+  justify-content: center;
+}
+
+.icon_menu {
+  width: 24px;
+  height: auto;
+  justify-content: center;
+}
+
+.styleMenu {
+  color:#000;
+  font-size: 19px;
+  margin-left: 3px;
+}
+
+header {
+  background-color: #fff;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin-left: 0; 
+  margin-top: 9px;
+  color: #0056b3;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px 0;
+}
+
+#hero {
+  background-color: #f4f4f4;
+  text-align: center;
+  background-size: auto;
+}
+
+#hero h2 {
+  margin-bottom: 20px;
+}
+
+#hero p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px; 
+}
+
+.footer-container {
+  width: 80%;
+  margin: 0 auto; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn-full-width {
+  width: 100%;
+}
+
+.btn-contact {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px; /* Ajout d'un espacement en bas */
+}
+
+.btn-contact:hover {
+  background-color: #004080;
+}
+
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: nowrap; /* Empêche le défilement des éléments sur plusieurs lignes */
+}
+
+.carousel-item {
+  flex: 0 0 33.33%;
+  transition: transform 0.5s ease;
+}
+
+#productCarousel {
+  overflow: hidden;
+}
+
+#prev-next {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#prev-next button {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+#prev-next button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.carousel-item img {
+  width: 600px; 
+  height: 400px; 
+  object-fit: cover; /* Ajuste la taille de l'image tout en conservant ses proportions */
+  border-radius: 15px;
+  margin-left: 450px;
+}
+
+.carousel-item h2 {
+  text-align: center;
+  margin-left: 450px;
+}
+/*==============*/
+/* Page Produit */
+/*==============*/
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.product img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px); 
+    }
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.product p {
+    font-size: 14px;
+}
+
+.btn-voir-plus {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+.btn-voir-plus:hover {
+  background-color: #0056b3;
+}
+/*==============*/
+/* Page Contact */
+/*==============*/
+
+#contact h2 {
+    margin-bottom: 5px;
+}
+  
+#contactForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+  
+#contactForm input[type="text"],
+#contactForm input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  height: 245px;
+  resize: none;
+}
+
+  
+#contactForm button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+  
+#contactForm button:hover {
+    background-color: #0056b3;
+}
