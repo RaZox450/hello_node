@@ -1,6 +1,10 @@
 import { fileURLToPath } from 'url';
 import { dirname } from "path";
 import express from 'express';
+import dotenv from 'dotenv';
+
+dotenv.config();
+const PORT = process.env.PORT;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -31,8 +35,8 @@ app.get("/img/:fileName", (req, res) => {
     res.sendFile(__dirname + "/img/" + req.params.fileName)
 })
 
-app.listen(8080, () => {
-    console.log("server is running on 127.0.0.1:8080")
+app.listen(PORT, () => {
+    console.log("server is running on 127.0.0.1:" + PORT);
 })
 
 // () => {}
